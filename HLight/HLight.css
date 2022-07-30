@@ -1,0 +1,95 @@
+code {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 4px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: block;
+    line-height: 1.2em;
+    font-size: 16px;
+    width: fit-content;
+    font-weight: 500;
+    padding: 1rem 2.5rem 1rem 1rem;
+    margin: 5px;
+}
+
+/* HTML */
+
+.html-code-str {
+    color: rgb(66, 194, 151);
+}
+
+.html-code-element {
+    color: rgb(242, 94, 94);
+}
+
+.html-code-lt {
+    color: rgb(242, 187, 59);
+}
+
+.html-code-gt {
+    color: rgb(242, 187, 59);
+}
+
+.html-code-comment {
+    color: rgb(143, 143, 143);
+}
+
+/* JS */
+
+.js-code-comment {
+    color: rgb(126, 126, 126);
+}
+
+.js-code-str {
+    color: rgb(66, 194, 151);
+}
+
+.js-code-paren {
+    color: #537dcb;
+    font-weight: 600;
+}
+
+.js-code-ponctuation {
+    color: rgb(225, 196, 34);
+}
+
+.js-code-func {
+    color: rgb(132, 70, 187);
+}
+
+.js-code-func-exc {
+    color: rgb(242, 94, 94);
+}
+
+/* CSS */
+
+.css-code-paren {
+    color: #537dcb;
+    font-weight: 600;
+}
+
+.css-code-ponctuation {
+    color: rgb(123, 123, 123);
+}
+
+.css-code-comment {
+    color: rgb(126, 126, 126);
+}
+
+.css-code-prop {
+    color: rgb(242, 187, 59);
+}
+
+.css-code-prop2 {
+    color: rgb(132, 70, 187);
+}
+
+.css-code-class {
+    color: rgb(210, 68, 68);
+}
+
+.css-code-id {
+    color: #537dcb;
+}

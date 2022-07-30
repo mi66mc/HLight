@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLight</title>
+    <script src="HLight/HLight.js"></script>
+    <link rel="stylesheet" href="HLight/HLight.css">
+    <link rel="stylesheet" href="https://mcsss.netlify.app/css/mcss.css">
+</head>
+<body>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+    <pre class="pre"><code id="code-html">&lt;link rel="stylesheet" href="https://HLight.com/HLight.css"&gt;
+&lt;h2 class="a-class"&gt;Welcome&lt;/h2&gt;
+&lt;p&gt;HLight is a code highlighter&lt;p&gt;</code></pre>
+    <pre class="pre"><code id="code-js">// This is a comment
+
+function Hello() {
+    console.log("Hello, world!");
+}</code></pre>
+    <pre class="pre"><code id="code-css">
+/*
+Comment
+CSS
+*/
+
+h2 {
+    color: black;
+}
+
+.a-class, #a-id {
+    color: #fff;
+}</code></pre>
+    <pre class="pre"><code id="code-user"></code></pre>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <textarea style="width: 50%; font-family: monospace;" class="textarea" id="textarea" cols="30" rows="10" placeholder="Your JavaScript Code Here..."></textarea>
+        <button id="btn" class="btn btn-primary">Highlight</button>
+    </div>
+    <script>
+        highlight(document.getElementById("code-html"), "html");
+        highlight(document.getElementById("code-js"), "javascript");
+        highlight(document.getElementById("code-css"), "css");
+        
+        document.getElementById("btn").addEventListener("click", function(e) {
+            var c = document.getElementById("code-user");
+            c.innerHTML = document.getElementById("textarea").value;
+            highlight(c, "javascript")
+        })
+    </script>
+</body>
+</html>
